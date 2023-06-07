@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Project Title - GST FILING APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Features:
 
-## Available Scripts
+1. User Registration: User registration endpoint (e.g., POST /api/register) where users can create an account.
 
-In the project directory, you can run:
+2. User Login: Generate a JWT token upon successful authentication and return it in the response. The token should be used to authenticate all API requests.
 
-### `npm start`
+3. Access Control and Authorization: A middleware that verifies the JWT token for protected routes. A role-based or permission-based access control system.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. Token Validation and Refresh: A mechanism to validate and refresh the JWT token.
+   Verify the integrity and expiration of the token on subsequent requests
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. Field Operations: A functionality in the admin panel to select specific columns and rows from the uploaded Excel file using dropdown selectors. It provides field to add formulas like SUM, Difference, etc., that can be applied to the selected column and row.
+6. Data Storage and Management: Utilize Firebase's Storage to store the Excel file data.
 
-### `npm test`
+7. Excel Data Visualization: A functionality to visualize the Excel file data in the Web.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Tech Stack
 
-### `npm run build`
+- React JS
+- Firebase Firestore
+- Firebase Storage
+- Firebase Authentication
+- Node JS
+- JWT Authentication
+- Redux
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| ![](Images/login.png) | ![](Images/viewfile.png) | ![](Images/uploadfile.png) | ![](Images/operation.png) |
+| :-------------------: | :----------------------: | :------------------------: | :-----------------------: |
+|     Login Screen      |        View File         |        Upload File         |       Add formulas        |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| ![](Images/sum.png) | ![](Images/difference.png) |
+| :-----------------: | :------------------------: |
+|         Sum         |         Difference         |
